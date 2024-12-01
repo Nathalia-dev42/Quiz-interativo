@@ -1,0 +1,108 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background: linear-gradient(135deg, #000, #222); 
+    color: #fff; 
+    margin: 0;
+    padding: 0;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+    position: relative; 
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: rgba(21, 23, 26, 0.9); 
+    border: 2px solid #fff; 
+    border-radius: 15px; 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
+    backdrop-filter: blur(10px); 
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+}
+
+h1, h2 {
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6); 
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1rem;
+    margin: 10px 0; 
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s, box-shadow 0.3s ease; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    width: 50%; 
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+input {
+    padding: 12px;
+    font-size: 1rem;
+    margin: 10px 0; 
+    width: 90%;
+    max-width: 400px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    transition: border-color 0.3s, box-shadow 0.3s; 
+}
+
+input:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); 
+}
+
+#options button {
+    display: block;
+    margin: 10px auto;
+    background-color: #17a2b8;
+    padding: 12px 24px;
+    border-radius: 5px;
+}
+
+#options button:hover {
+    background-color: #138496;
+    transform: scale(1.05);
+}
+
+#scoreboard div {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    color: #495057;
+}
+
+#scoreSection button {
+    background-color: #28a745;
+    padding: 12px 0; 
+    border-radius: 5px;
+    width: 100%; 
+    font-size: 1rem; 
+}
+
+#scoreSection button:hover {
+    background-color: #218838;
+}

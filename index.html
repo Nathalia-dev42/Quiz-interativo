@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="nameEntrySection">
+            <h2>Digite os nomes dos jogadores:</h2>
+            <input type="text" id="player1" placeholder="Jogador 1">
+            <input type="text" id="player2" placeholder="Jogador 2">
+            <button onclick="savePlayerNames()">Iniciar</button>
+        </div>
+
+        <div id="player-info" style="display: none;">
+            <h2 id="currentPlayerName"></h2>
+        </div>
+
+        <div id="themeSelection" style="display: none;">
+            <h2>Escolha um tema:</h2>
+            <button onclick="startQuiz('filmes')">Filmes</button>
+            <button onclick="startQuiz('jogos')">Jogos</button>
+            <button onclick="startQuiz('historia')">História</button>
+            <button onclick="startQuiz('musicas')">Músicas</button>
+        </div>
+
+        <div id="questionSection" style="display: none;">
+            <h2 id="themeTitle"></h2>
+            <h3 id="question"></h3>
+            <div id="options"></div>
+        </div>
+
+        <div id="scoreSection" style="display: none;">
+            <h2>Placar Final:</h2>
+            <div id="scoreboard"></div>
+            <button onclick="restartQuiz()">Reiniciar</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
